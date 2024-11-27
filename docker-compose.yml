@@ -15,6 +15,7 @@ services:
       - worpress_app:/var/www/html
     networks:
       - my_netwk_wdpress
+    restart: always
     depends_on:
       - mariadb_host
 
